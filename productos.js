@@ -18,7 +18,7 @@ router.get('/:id', (req,res)=>{
     }
     else{
         const ProdFind=Productos[id-1]
-        res.send(ProdFind)
+        res.send({ProdFind})
     }
 })
 
